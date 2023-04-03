@@ -16,6 +16,8 @@
 		01F37FD729DAC841008B5FE4 /* ProverbsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F37FD629DAC841008B5FE4 /* ProverbsTests.swift */; };
 		01F37FE129DAC841008B5FE4 /* ProverbsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F37FE029DAC841008B5FE4 /* ProverbsUITests.swift */; };
 		01F37FE329DAC841008B5FE4 /* ProverbsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F37FE229DAC841008B5FE4 /* ProverbsUITestsLaunchTests.swift */; };
+		01F37FF029DAC9B5008B5FE4 /* ProverbData.json in Resources */ = {isa = PBXBuildFile; fileRef = 01F37FEF29DAC9B5008B5FE4 /* ProverbData.json */; };
+		01F37FF229DACA25008B5FE4 /* Proverb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F37FF129DACA25008B5FE4 /* Proverb.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		01F37FDC29DAC841008B5FE4 /* ProverbsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProverbsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01F37FE029DAC841008B5FE4 /* ProverbsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProverbsUITests.swift; sourceTree = "<group>"; };
 		01F37FE229DAC841008B5FE4 /* ProverbsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProverbsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		01F37FEF29DAC9B5008B5FE4 /* ProverbData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProverbData.json; sourceTree = "<group>"; };
+		01F37FF129DACA25008B5FE4 /* Proverb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proverb.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +106,12 @@
 				01F37FBF29DAC840008B5FE4 /* AppDelegate.swift */,
 				01F37FC129DAC840008B5FE4 /* SceneDelegate.swift */,
 				01F37FC329DAC840008B5FE4 /* ViewController.swift */,
+				01F37FF129DACA25008B5FE4 /* Proverb.swift */,
 				01F37FC529DAC840008B5FE4 /* Main.storyboard */,
 				01F37FC829DAC840008B5FE4 /* Assets.xcassets */,
 				01F37FCA29DAC840008B5FE4 /* LaunchScreen.storyboard */,
 				01F37FCD29DAC840008B5FE4 /* Info.plist */,
+				01F37FEF29DAC9B5008B5FE4 /* ProverbData.json */,
 			);
 			path = Proverbs;
 			sourceTree = "<group>";
@@ -233,6 +239,7 @@
 			files = (
 				01F37FCC29DAC840008B5FE4 /* LaunchScreen.storyboard in Resources */,
 				01F37FC929DAC840008B5FE4 /* Assets.xcassets in Resources */,
+				01F37FF029DAC9B5008B5FE4 /* ProverbData.json in Resources */,
 				01F37FC729DAC840008B5FE4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01F37FF229DACA25008B5FE4 /* Proverb.swift in Sources */,
 				01F37FC429DAC840008B5FE4 /* ViewController.swift in Sources */,
 				01F37FC029DAC840008B5FE4 /* AppDelegate.swift in Sources */,
 				01F37FC229DAC840008B5FE4 /* SceneDelegate.swift in Sources */,
@@ -366,7 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
