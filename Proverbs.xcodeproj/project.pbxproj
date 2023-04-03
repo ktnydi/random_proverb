@@ -18,6 +18,7 @@
 		01F37FE329DAC841008B5FE4 /* ProverbsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F37FE229DAC841008B5FE4 /* ProverbsUITestsLaunchTests.swift */; };
 		01F37FF029DAC9B5008B5FE4 /* ProverbData.json in Resources */ = {isa = PBXBuildFile; fileRef = 01F37FEF29DAC9B5008B5FE4 /* ProverbData.json */; };
 		01F37FF229DACA25008B5FE4 /* Proverb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F37FF129DACA25008B5FE4 /* Proverb.swift */; };
+		01F37FF429DACB80008B5FE4 /* ProverbDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F37FF329DACB80008B5FE4 /* ProverbDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		01F37FE229DAC841008B5FE4 /* ProverbsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProverbsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		01F37FEF29DAC9B5008B5FE4 /* ProverbData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProverbData.json; sourceTree = "<group>"; };
 		01F37FF129DACA25008B5FE4 /* Proverb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proverb.swift; sourceTree = "<group>"; };
+		01F37FF329DACB80008B5FE4 /* ProverbDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProverbDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				01F37FBF29DAC840008B5FE4 /* AppDelegate.swift */,
 				01F37FC129DAC840008B5FE4 /* SceneDelegate.swift */,
 				01F37FC329DAC840008B5FE4 /* ViewController.swift */,
+				01F37FF329DACB80008B5FE4 /* ProverbDetailViewController.swift */,
 				01F37FF129DACA25008B5FE4 /* Proverb.swift */,
 				01F37FC529DAC840008B5FE4 /* Main.storyboard */,
 				01F37FC829DAC840008B5FE4 /* Assets.xcassets */,
@@ -268,6 +271,7 @@
 				01F37FF229DACA25008B5FE4 /* Proverb.swift in Sources */,
 				01F37FC429DAC840008B5FE4 /* ViewController.swift in Sources */,
 				01F37FC029DAC840008B5FE4 /* AppDelegate.swift in Sources */,
+				01F37FF429DACB80008B5FE4 /* ProverbDetailViewController.swift in Sources */,
 				01F37FC229DAC840008B5FE4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

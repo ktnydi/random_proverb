@@ -44,6 +44,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="4sB-Em-RaO" kind="show" identifier="toProverbDetailVC" id="I2N-ej-A0c"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -65,6 +68,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="313.74045801526717" y="-45.070422535211272"/>
+        </scene>
+        <!--Proverb Detail View Controller-->
+        <scene sceneID="j0V-oJ-r3F">
+            <objects>
+                <viewController id="4sB-Em-RaO" customClass="ProverbDetailViewController" customModule="Proverbs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uoa-Jv-aRA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WaM-my-yar">
+                                <rect key="frame" x="16" y="395" width="361" height="62"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7Y-t0-ldD">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="33.666666666666664"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aj8-Gl-RLJ">
+                                        <rect key="frame" x="0.0" y="41.666666666666686" width="361" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="aj8-Gl-RLJ" firstAttribute="centerX" secondItem="WaM-my-yar" secondAttribute="centerX" id="xO3-r0-FHG"/>
+                                    <constraint firstItem="d7Y-t0-ldD" firstAttribute="centerX" secondItem="WaM-my-yar" secondAttribute="centerX" id="zoX-gg-0aZ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yx5-Zz-c1L"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WaM-my-yar" firstAttribute="centerY" secondItem="Uoa-Jv-aRA" secondAttribute="centerY" id="3k7-fX-4Ed"/>
+                            <constraint firstItem="yx5-Zz-c1L" firstAttribute="trailing" secondItem="WaM-my-yar" secondAttribute="trailing" constant="16" id="9cT-m3-a54"/>
+                            <constraint firstItem="WaM-my-yar" firstAttribute="leading" secondItem="yx5-Zz-c1L" secondAttribute="leading" constant="16" id="wEQ-GE-tJs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1tU-b5-bbR"/>
+                    <connections>
+                        <outlet property="message" destination="d7Y-t0-ldD" id="5vI-Qh-gbo"/>
+                        <outlet property="subMessage" destination="aj8-Gl-RLJ" id="zMb-kt-8Nr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d8q-VY-Iwc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1170" y="-45"/>
         </scene>
     </scenes>
     <resources>

@@ -18,6 +18,23 @@ class ViewController: UIViewController {
         
         setupTableView()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        // セルの選択を解除
+        if let indexPath = proverbTableView.indexPathForSelectedRow {
+            proverbTableView.deselectRow(at: indexPath, animated: false)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // 遷移先にタップしたセルの値を渡す。
+        if segue.identifier == "toProverbDetailVC" {
+            let destinationVC = segue.destination as! ProverbDetailViewController
+            if let indexPath = proverbTableView.indexPathForSelectedRow {
+                destinationVC.proverb = proverbs[indexPath.row]
+            }
+        }
+    }
 }
 
 extension ViewController {
