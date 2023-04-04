@@ -3,7 +3,9 @@ struct Proverb {
     let message: String
     let movie: String
     let year: Int
-    
+}
+
+extension Proverb {
     init(json: [String: Any]) {
         character =  json["character"] as! String;
         message = json["message"] as! String;
